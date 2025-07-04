@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     env_file:
-      - bot/.env
+      - .env
     environment:
       - DEBUG=False
     networks:
@@ -20,7 +20,7 @@ services:
     ports:
       - "27017:27017"
     env_file:
-      - bot/.env
+      - .env
     volumes:
       - ./mongodb/data:/data/db
     networks:
