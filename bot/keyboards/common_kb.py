@@ -16,20 +16,3 @@ def contact_kb():
         input_field_placeholder="Telefon raqamingizni kiriting yoki tugmani bosing",
     )
     return keyboard
-
-
-def main_menu_kb():
-    keyboard = ReplyKeyboardMarkup(
-        keyboard=[
-            [
-                KeyboardButton(text="📍 Manzillarimiz"),
-                KeyboardButton(text="📞 Aloqa"),
-            ],
-            [
-                KeyboardButton(text="📝 Fikr bildirish"),
-            ]
-        ],
-        resize_keyboard=True,
-        input_field_placeholder=None,
-    )
-    return keyboard

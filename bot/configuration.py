@@ -14,7 +14,6 @@ class BotConfig:
     token: str = env.str("TELEGRAM_TOKEN")
     admins: list = field(default_factory=lambda: env.list("ADMIN_IDS"))
     debug: bool = env.bool("DEBUG", False)
-    log_chat_id: int = -1002140838197
 
 
 @dataclass
