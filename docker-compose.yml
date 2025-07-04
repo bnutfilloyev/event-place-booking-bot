@@ -18,7 +18,7 @@ services:
     image: mongo:latest
     restart: unless-stopped
     ports:
-      - "27017:27017"
+      - "27123:27017"
     env_file:
       - .env
     volumes:
